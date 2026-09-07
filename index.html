@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ABC Tutoring</title>
+<link rel="stylesheet" href="style.css" />
+
+<script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  posthog.init('phc_oHDLPC8VNDtLNFX74jM6r7opZNoM9AsQs2pRotUpreX5', { api_host: 'https://us.i.posthog.com' });
+
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const src = params.get('utm_source');
+    if (src) {
+      posthog.register({ utm_source: src });
+    }
+  })();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">ABC Tutoring</div>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="tutors.html">Our Tutors</a>
+    <a href="booking.html">Book a Session</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Friendly, personal tutoring for K–12 students</h1>
+    <p>ABC Tutoring connects your student with a caring, experienced tutor for math, science, and reading — no pressure, just support.</p>
+    <a href="tutors.html" class="btn">Meet Our Tutors</a>
+  </section>
+
+  <h2 class="section-title">What We Offer</h2>
+  <div class="subjects-grid">
+    <div class="subject-pill">Elementary Math</div>
+    <div class="subject-pill">Algebra I &amp; II</div>
+    <div class="subject-pill">Science (K-8)</div>
+    <div class="subject-pill">Reading (K-5)</div>
+  </div>
+
+  <h2 class="section-title">How It Works</h2>
+  <div class="subjects-grid">
+    <div class="subject-pill">1. Browse Tutors</div>
+    <div class="subject-pill">2. Pick a Time</div>
+    <div class="subject-pill">3. We Confirm It</div>
+  </div>
+</main>
+
+<footer>&copy; 2026 ABC Tutoring. Made with care for local families.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
